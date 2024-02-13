@@ -1,12 +1,12 @@
 import { IsBoolean, IsNumber, IsString } from 'class-validator';
 
-export class CreateUserDTO {
+export class CreateCarDTO {
   @IsString()
-  name: string;
+  model: string;
 
   @IsNumber()
-  age: number;
+  year: number;
 
   @IsBoolean()
-  isMarried: boolean;
+  isRacing: boolean;
 }
